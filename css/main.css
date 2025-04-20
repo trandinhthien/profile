@@ -1090,23 +1090,38 @@ header {
 	min-height: 66px;
 	z-index: 600;
 }
-header .row {
+/* header .row {
 	position: relative;
 	min-height: 66px;
 }
 header .top-bar {
 	display: block;
-	/* background: #000000; */
+	background: #000000;
 	min-width: 220px;
 	min-height: 66px;
 	position: absolute;
-	/* left: 90px; */
-	left: -275px;
-
+	left: 90px;
 	top: 0;
+} */
 
 
+header .row {
+	position: relative;
+	min-height: 66px;
+	margin: 0;
+	padding: 0;
 }
+header .top-bar {
+	display: block;
+	position: absolute;
+	left: 0; /* Đảm bảo nằm sát trái */
+	top: 0;
+	min-width: 220px;
+	min-height: 66px;
+	/* background: rgba(0, 0, 0, 0.6); để test xem có hiển thị đúng vị trí */
+	z-index: 999; /* đảm bảo nằm trên */
+}
+
 header .logo {
 	float: left;
 	margin-left: 20px;
