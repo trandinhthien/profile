@@ -2515,6 +2515,9 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 footer {
+	background: #151515; /* Thêm dòng này để lấy màu đen giống phần Contact */
+    padding-top: 6rem;   /* Thêm chút khoảng cách trên cho đẹp */
+	
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
